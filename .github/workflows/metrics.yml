@@ -18,3 +18,14 @@ jobs:
           base: ""
           plugin_people_types: followers
           plugin_people: yes
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.signal-boost.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_starlists: yes
+          plugin_starlists_only: signal-boost
+          plugin_starlists_limit: 1
+          plugin_starlists_limit_repositories: 100
+          plugin_starlists_shuffle_repositories: no
+          plugin_starlists_languages: yes
